@@ -1,16 +1,14 @@
-#Selenium Webdriver must be installed for this to work
-
 import time;
 from selenium import webdriver;
 
 #time to refresh page (seconds)
-Timer = 120
+Timer = 60 #(60 seconds)
 
 #youtube link
-link = 'https://www.youtube.com/watch?v=pFSJWMmHhfo'
+link = 'https://www.youtube.com/watch?v=PWVbEtkLqpU&t=3s'
 
 #number of views
-views = 20
+views = 10
 
 driver = webdriver.Chrome()
 driver.get(link)
@@ -18,4 +16,4 @@ driver.get(link)
 for i in range(views):
     time.sleep(Timer)
     driver.refresh()
-    print(i)
+    
